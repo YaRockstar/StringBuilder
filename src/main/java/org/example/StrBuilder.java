@@ -6,13 +6,13 @@ import java.util.Arrays;
  * Упрощенная реализация класса StringBuilder (только базовые операции без множественных перегрузок).
  */
 public class StrBuilder {
+    private static final int BASE_CAPACITY = 16;
+
     private int length;
 
     private int capacity;
 
     private char[] array;
-
-    private final int BASE_CAPACITY = 16;
 
     public StrBuilder() {
         length = 0;
